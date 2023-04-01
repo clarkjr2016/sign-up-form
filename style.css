@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-background-color: grey;
+  --light-background-color: rgb(197, 197, 197);
+}
+
+body {
+  display: flex;
+}
+
+body > * {
+  border: 2px solid red;
+}
+
+#left-section {
+  width: min(35%, 40rem);
+}
