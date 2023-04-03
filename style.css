@@ -48,35 +48,42 @@
 #odin-logo {
   color: white;
   font-family: "Norse Bold";
-  font-size: min(5em, 2em);
+  flex-basis: auto;
   margin: auto 0;
-}
-
-img {
-}
-
-#right-section div > * {
-  padding-left: min(2rem);
-  padding-right: min(2rem);
-}
-
-#right-section form > * {
-  padding-left: min(2rem);
-  padding-right: min(2rem);
+  font-size: min(5em);
 }
 
 .right-side-containers p {
   background-color: var(--dark-background-color);
-
+  padding-left: 2rem;
+  padding-right: 2rem;
   font-size: min(1.5rem);
   font-weight: bold;
 }
 
-.right-side-containers p:first-child {
-  padding-top: min(10rem);
+.right-side-containers > p:first-child {
+  padding-top: min(8rem);
 }
 
-.right-side-containers p:nth-child(2) {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+.right-side-containers > p:nth-child(2) {
+  padding-top: min(1rem);
+}
+
+#input-container {
+  display: flex;
+  gap: 2em;
+}
+
+#input-container div {
+  border: blue 5px solid;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+form > h1 {
+  padding-left: 2rem;
 }
