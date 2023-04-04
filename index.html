@@ -27,31 +27,36 @@
           <p>Lorem ipsum dolor sit amet consectetur</p>
         </div>
         <form action="" method="post">
-          <h1>Let's do this!</h1>
-          <div id="input-container">
-            <div class="label-container">
-              <label for="first-name">First Name:</label>
-              <input type="text" name="first-name" id="first-name" />
-              <label for="email">Email:</label>
-              <input type="email" name="email" id="email" />
-              <label for="password">Password:</label>
-              <input type="password" name="password" id="password" required />
+          <div id="form-color-container">
+            <h1>Let's do this!</h1>
+            <div id="input-container">
+              <div class="label-container">
+                <label for="first-name">First Name:</label>
+                <input type="text" name="first-name" id="first-name" />
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" />
+
+                <label for="password">*Password:</label>
+                <input type="password" name="password" id="password" required />
+              </div>
+
+              <!-- this is the left side -->
+              <div class="label-container">
+                <label for="last-name">Last Name:</label>
+                <input type="text" name="last-name" id="last-name" />
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" />
+                <label for="c-password">*Confirm Password:</label>
+                <input
+                  type="password"
+                  name="c-password"
+                  id="c-password"
+                  required
+                />
+              </div>
+              <!-- this is the right side -->
             </div>
-            <!-- this is the left side -->
-            <div class="label-container">
-              <label for="last-name">Last Name:</label>
-              <input type="text" name="last-name" id="last-name" />
-              <label for="phone">Phone Number:</label>
-              <input type="tel" name="phone" id="phone" />
-              <label for="c-password">Confirm Password:</label>
-              <input
-                type="password"
-                name="c-password"
-                id="c-password"
-                required
-              />
-            </div>
-            <!-- this is the right side -->
           </div>
           <div id="create-btn-container">
             <button type="submit">Create Account</button>

@@ -10,21 +10,17 @@
 }
 
 :root {
-  --dark-background-color: rgb(233, 233, 233);
-  --light-background-color: rgb(243, 242, 242);
+  --dark-background-color: rgb(214, 211, 211);
+  --light-background-color: rgb(231, 231, 231);
 }
 
 #wrapper-container {
   display: flex;
-  height: min(95vh);
-}
-
-#wrapper-container > * {
-  border: 2px solid red;
+  min-height: 100vh;
 }
 
 #left-section {
-  width: min(40rem);
+  min-width: clamp(35rem, 40rem, 50rem);
   background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
   background-repeat: none;
   background-size: cover;
@@ -33,7 +29,7 @@
 
 #odin-container {
   position: absolute;
-  top: 100px;
+  top: 250px;
   height: min(200px, 20%);
   background-color: rgba(0, 0, 0, 0.5);
   width: min(100%);
@@ -75,8 +71,7 @@
 }
 
 #input-container div {
-  border: blue 5px solid;
-  height: auto;
+  height: min(16em);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -84,6 +79,37 @@
   padding-right: 2rem;
 }
 
-form > h1 {
+form h1 {
+  padding: 1rem 2rem;
+}
+
+.label-container input {
+  margin-bottom: min(2.5rem);
+}
+
+#form-color-container {
+  background-color: var(--light-background-color);
+  box-shadow: 2px 2px 2px 2px rgb(226, 223, 223);
+}
+
+#create-btn-container {
+  padding-top: 2rem;
   padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#create-btn-container button {
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  background-color: #596d48;
+  margin-bottom: 1rem;
+}
+#create-btn-container button:hover {
+  cursor: pointer;
+}
+
+input:invalid {
+  border-color: red;
 }
